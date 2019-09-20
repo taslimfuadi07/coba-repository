@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^$ index.php [L]
+RewriteCond $1 !^(index\.php|beta|otoadmin|assets|apk|mutasi|photo_sales|system|application|font-awesome|css|img|js|robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
